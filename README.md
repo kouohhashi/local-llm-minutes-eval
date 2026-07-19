@@ -17,7 +17,7 @@ measured on a 64GB Mac mini. Re-measured periodically with the same dataset and 
 「人手レビュー前提なら使える、自動連携（グレードA）はまだ不可」が2026年7月時点の現在地。
 Thinkingモードは時間を4.7〜8.7倍にし、num_ctx 32768 では qwen3.5系の成果物がゼロになった。
 
-- 📕 テクニカルペーパー: [`paper/`](paper/)（PDF）
+- 📕 テクニカルペーパー: [`paper/local-llm-minutes-eval-2026-07.pdf`](paper/local-llm-minutes-eval-2026-07.pdf)
 - 📊 測定結果: [`results/2026-07/`](results/2026-07/)
 - 📝 解説ブログ / 🎥 動画: https://shabelab.com （リンクを追記）
 
