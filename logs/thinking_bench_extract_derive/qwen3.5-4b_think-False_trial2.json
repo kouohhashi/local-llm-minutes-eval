@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:4b",
+  "created_at": "2026-07-18T23:32:08.796043Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"decisions\": [\n    {\n      \"id\": \"D1\",\n      \"content\": \"プロジェクト・アオゾラの本番リリースは2026年5月3日に承認されました。\",\n      \"decided_by\": \"桐生遥\"\n    },\n    {\n      \"id\": \"D2\",\n      \"content\": \"本番システムの正式キックオフを開始しました。\",\n      \"decided_by\": \"桐生遥\"\n    },\n    {\n      \"id\": \"D3\",\n      \"content\": \"週次定例会は毎週水曜日の10時開催とする決定いたしました。\",\n      \"decided_by\": \"桐生遥\"\n    },\n    {\n      \"id\": \"D4\",\n      \"content\": \"本番リリースの時期を9月末から2026年10月15日に変更いたしました。\",\n      \"decided_by\": \"桐生遥\"\n    }\n  ],\n  \"action_items\": [\n    {\n      \"id\": \"A1\",\n      \"task\": \"API仕様書のドラフトを作成します。\",\n      \"assignee\": \"芦田巧\",\n      \"due\": \"2026-05-20\"\n    },\n    {\n      \"id\": \"A2\",\n      \"task\": \"検証環境のサーバ調達依頼を出します。\",\n      \"assignee\": \"沼田賢一\",\n      \"due\": \"2026-05-15\"\n    },\n    {\n      \"id\": \"A3\",\n      \"task\": \"現場ヒアリングの対象部署リストを作成し提出します。\",\n      \"assignee\": \"東雲美咲\",\n      \"due\": \"2026-05-19\"\n    }\n  ],\n  \"key_numbers\": [\n    {\n      \"id\": \"N1\",\n      \"label\": \"対象拠点数と利用者の規模感を示す指標です。\",\n      \"value\": \"14拠点、320人\"\n    },\n    {\n      \"id\": \"N2\",\n      \"label\": \"現行システムの月間ダウンタイムの平均値です。\",\n      \"value\": \"42分/月\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 12087709250,
+  "load_duration": 165951250,
+  "prompt_eval_count": 23746,
+  "prompt_eval_duration": 87503000,
+  "eval_count": 520,
+  "eval_duration": 11783607000
+}

@@ -1,0 +1,32 @@
+[10:06:24] (1/10) qwen3.6:27b 第2段think=False trial=1
+[10:13:44]    第1段: out=1824 stop=stop (440.4s)
+[10:17:25]    第2段: prompt=2106 out=2385 stop=stop (220.3s)
+[10:17:25] (2/10) qwen3.6:27b 第2段think=False trial=2
+[10:20:56]    第1段: out=2256 stop=stop (210.8s)
+[10:24:47]    第2段: prompt=2538 out=2460 stop=stop (231.4s)
+[10:24:47] (3/10) qwen3.6:27b 第2段think=False trial=3
+[10:27:42]    第1段: out=1871 stop=stop (174.9s)
+[10:30:33]    第2段: prompt=2152 out=1792 stop=stop (171.3s)
+[10:30:33] (4/10) qwen3.6:27b 第2段think=False trial=4
+[10:33:39]    第1段: out=1991 stop=stop (186.0s)
+[10:37:09]    第2段: prompt=2273 out=2240 stop=stop (209.9s)
+[10:37:09] (5/10) qwen3.6:27b 第2段think=False trial=5
+[10:41:06]    第1段: out=2532 stop=stop (236.8s)
+[10:44:52]    第2段: prompt=2813 out=2371 stop=stop (226.7s)
+[10:44:52] (6/10) qwen3.6:27b 第2段think=True trial=1
+[10:48:08]    第1段: out=2083 stop=stop (195.4s)
+[10:58:24]    第2段: prompt=2363 out=6980 stop=stop (616.2s)
+[10:58:24] (7/10) qwen3.6:27b 第2段think=True trial=2
+[11:01:21]    第1段: out=1877 stop=stop (176.6s)
+[11:13:16]    第2段: prompt=2157 out=8156 stop=stop (714.8s)
+[11:13:16] (8/10) qwen3.6:27b 第2段think=True trial=3
+[11:17:05]    第1段: out=2442 stop=stop (229.9s)
+[12:03:56]    第2段: prompt=2721 out=7519 stop=stop (2810.9s)
+[12:03:56] (9/10) qwen3.6:27b 第2段think=True trial=4
+[12:08:58]    第1段: out=3206 stop=stop (301.2s)
+[12:20:20]    第2段: prompt=3484 out=7627 stop=stop (682.8s)
+[12:20:20] (10/10) qwen3.6:27b 第2段think=True trial=5
+[12:23:26]    第1段: out=1989 stop=stop (186.1s)
+[12:34:37]    第2段: prompt=2268 out=7697 stop=stop (671.1s)
+[12:34:38] 完了。CSV: /Users/shabelab/Desktop/paper-20260718/experiment/results/twostage.csv / 生ログ: /Users/shabelab/Desktop/paper-20260718/experiment/logs/twostage
+[12:34:38] 採点: python3 scripts/score.py --logs /Users/shabelab/Desktop/paper-20260718/experiment/logs/twostage --out /Users/shabelab/Desktop/paper-20260718/experiment/results/quality_eval_twostage.csv

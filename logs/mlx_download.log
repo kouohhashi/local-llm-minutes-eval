@@ -1,0 +1,9 @@
+/Users/shabelab/Desktop/paper-20260718/experiment/.venv-mlx/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+=== ダウンロード開始: mlx-community/Qwen3.5-27B-4bit ===
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files:   7%|▋         | 1/15 [00:00<00:03,  4.39it/s]Fetching 15 files:  13%|█▎        | 2/15 [00:00<00:03,  4.01it/s]Fetching 15 files:  40%|████      | 6/15 [12:30<21:41, 144.59s/it]Fetching 15 files: 100%|██████████| 15/15 [12:30<00:00, 50.04s/it]
+完了: mlx-community/Qwen3.5-27B-4bit  (12.5分)  -> /Users/shabelab/.cache/huggingface/hub/models--mlx-community--Qwen3.5-27B-4bit/snapshots/45797d2985a12c55e6473686e9ea91b95e959553
+=== ダウンロード開始: mlx-community/Qwen3.5-27B-5bit ===
+Fetching 16 files:   0%|          | 0/16 [00:00<?, ?it/s]Fetching 16 files:   6%|▋         | 1/16 [00:00<00:09,  1.57it/s]Fetching 16 files:  38%|███▊      | 6/16 [15:00<26:20, 158.03s/it]Fetching 16 files: 100%|██████████| 16/16 [15:00<00:00, 56.31s/it]
+完了: mlx-community/Qwen3.5-27B-5bit  (15.0分)  -> /Users/shabelab/.cache/huggingface/hub/models--mlx-community--Qwen3.5-27B-5bit/snapshots/8ec999add47e5a5bbc1a6f2c4e2b0497b81a461d
+ALL_DONE

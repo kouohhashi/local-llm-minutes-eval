@@ -1,0 +1,64 @@
+[1/2] 1段構え（網羅指示あり）qwen3.6:27b × Thinking両方 × 5試行
+[12:59:10] task=extract_all / プロンプト長=34042文字 / models=qwen3.6:27b / trials=5 / num_ctx=32768 / thinking=both
+[12:59:10] ============================================================
+[12:59:10] モデル: qwen3.6:27b
+[12:59:10] (1/10) qwen3.6:27b think=False trial=1 ...
+[13:06:12]   ollama ps: qwen3.6:27b    a50eda8ed977    18 GB    100% GPU     32768      4 minutes from now
+[13:06:12]   -> prompt=23724 eval=1576 eval_time=146.54s total=421.72s tok/s=10.75
+[13:06:12] (2/10) qwen3.6:27b think=False trial=2 ...
+[13:08:39]   -> prompt=23724 eval=1574 eval_time=146.40s total=147.01s tok/s=10.75
+[13:08:39] (3/10) qwen3.6:27b think=False trial=3 ...
+[13:11:15]   -> prompt=23724 eval=1680 eval_time=155.96s total=156.54s tok/s=10.77
+[13:11:15] (4/10) qwen3.6:27b think=False trial=4 ...
+[13:14:12]   -> prompt=23724 eval=1897 eval_time=176.56s total=177.14s tok/s=10.74
+[13:14:12] (5/10) qwen3.6:27b think=False trial=5 ...
+[13:16:49]   -> prompt=23724 eval=1678 eval_time=155.87s total=156.45s tok/s=10.77
+[13:16:49] (6/10) qwen3.6:27b think=True trial=1 ...
+[13:28:30]   ollama ps: qwen3.6:27b    a50eda8ed977    18 GB    100% GPU     32768      4 minutes from now
+[13:28:30]   -> prompt=23722 eval=7383 eval_time=700.97s total=701.35s tok/s=10.53
+[13:28:30] (7/10) qwen3.6:27b think=True trial=2 ...
+[13:38:11]   -> prompt=23722 eval=6126 eval_time=580.61s total=581.04s tok/s=10.55
+[13:38:11] (8/10) qwen3.6:27b think=True trial=3 ...
+[13:47:39]   -> prompt=23722 eval=5998 eval_time=567.24s total=567.61s tok/s=10.57
+[13:47:39] (9/10) qwen3.6:27b think=True trial=4 ...
+[13:58:23]   -> prompt=23722 eval=6784 eval_time=643.44s total=643.81s tok/s=10.54
+[13:58:23] (10/10) qwen3.6:27b think=True trial=5 ...
+[14:10:05]   -> prompt=23722 eval=7370 eval_time=701.90s total=702.26s tok/s=10.50
+[14:10:05] モデル qwen3.6:27b 完了、アンロード済み
+[14:10:05] ============================================================
+[14:10:05] 全 10 実行が完了。CSV: /Users/shabelab/Desktop/paper-20260718/experiment/results/thinking_bench_extract_all.csv
+[14:10:05] 生ログ: /Users/shabelab/Desktop/paper-20260718/experiment/logs/thinking_bench_extract_all
+[2/2] 2段構え（網羅指示あり）qwen3.6:27b × 第2段Thinking両方 × 5試行
+[14:10:05] (1/10) qwen3.6:27b 第2段think=False trial=1
+[14:17:00]    第1段: out=1532 stop=stop (414.4s)
+[14:20:03]    第2段: prompt=1820 out=1988 stop=stop (183.8s)
+[14:20:03] (2/10) qwen3.6:27b 第2段think=False trial=2
+[14:21:51]    第1段: out=1154 stop=stop (107.8s)
+[14:24:48]    第2段: prompt=1443 out=1951 stop=stop (176.7s)
+[14:24:48] (3/10) qwen3.6:27b 第2段think=False trial=3
+[14:26:21]    第1段: out=997 stop=stop (93.2s)
+[14:29:01]    第2段: prompt=1286 out=1766 stop=stop (159.6s)
+[14:29:01] (4/10) qwen3.6:27b 第2段think=False trial=4
+[14:31:26]    第1段: out=1555 stop=stop (145.3s)
+[14:34:09]    第2段: prompt=1844 out=1736 stop=stop (163.2s)
+[14:34:09] (5/10) qwen3.6:27b 第2段think=False trial=5
+[14:35:30]    第1段: out=862 stop=stop (80.6s)
+[14:37:59]    第2段: prompt=1152 out=1656 stop=stop (148.9s)
+[14:37:59] (6/10) qwen3.6:27b 第2段think=True trial=1
+[14:39:43]    第1段: out=1112 stop=stop (103.9s)
+[14:46:26]    第2段: prompt=1398 out=4668 stop=stop (403.4s)
+[14:46:26] (7/10) qwen3.6:27b 第2段think=True trial=2
+[14:48:19]    第1段: out=1209 stop=stop (112.9s)
+[14:56:06]    第2段: prompt=1496 out=5405 stop=stop (466.8s)
+[14:56:06] (8/10) qwen3.6:27b 第2段think=True trial=3
+[14:58:47]    第1段: out=1726 stop=stop (161.3s)
+[15:06:53]    第2段: prompt=2013 out=5547 stop=stop (486.3s)
+[15:06:53] (9/10) qwen3.6:27b 第2段think=True trial=4
+[15:08:51]    第1段: out=1260 stop=stop (117.8s)
+[15:16:40]    第2段: prompt=1548 out=5418 stop=stop (468.8s)
+[15:16:40] (10/10) qwen3.6:27b 第2段think=True trial=5
+[15:18:58]    第1段: out=1480 stop=stop (138.4s)
+[15:27:03]    第2段: prompt=1768 out=5571 stop=stop (484.6s)
+[15:27:03] 完了。CSV: /Users/shabelab/Desktop/paper-20260718/experiment/results/twostage.csv / 生ログ: /Users/shabelab/Desktop/paper-20260718/experiment/logs/twostage
+[15:27:03] 採点: python3 scripts/score.py --logs /Users/shabelab/Desktop/paper-20260718/experiment/logs/twostage --out /Users/shabelab/Desktop/paper-20260718/experiment/results/quality_eval_twostage.csv
+[chain] 完了

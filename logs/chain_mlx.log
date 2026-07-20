@@ -1,0 +1,155 @@
+[mlx] 1段/2段比較の完了を待機中...
+[mlx] 開始（Ollama 5試行 + MLX 4bit 5試行 + MLX 5bit 5試行）
+[15:27:17] ============================================================
+[15:27:17] 環境確認
+[15:27:17] Ollama: 0.30.10
+[15:27:18] mlx-lm: 導入済み (version=0.29.1)
+[15:27:18] ------------------------------------------------------------
+[15:27:18] Ollama のバックエンド確認（確認できた事実のみ記録する）:
+[15:27:18]   ~/.ollama/logs/server.log より:
+[15:27:18]     slot update_slots: id  0 | task 7655 | forcing full prompt re-processing due to lack of cache data (likely due to SWA or hybrid/recurrent memory, see https://gi
+[15:27:18]     slot update_slots: id  0 | task 10980 | forcing full prompt re-processing due to lack of cache data (likely due to SWA or hybrid/recurrent memory, see https://g
+[15:27:18]     slot update_slots: id  0 | task 13582 | forcing full prompt re-processing due to lack of cache data (likely due to SWA or hybrid/recurrent memory, see https://g
+[15:27:18]     slot update_slots: id  0 | task 16354 | forcing full prompt re-processing due to lack of cache data (likely due to SWA or hybrid/recurrent memory, see https://g
+[15:27:18]     slot update_slots: id  0 | task 22235 | forcing full prompt re-processing due to lack of cache data (likely due to SWA or hybrid/recurrent memory, see https://g
+[15:27:18]     slot update_slots: id  0 | task 29370 | forcing full prompt re-processing due to lack of cache data (likely due to SWA or hybrid/recurrent memory, see https://g
+[15:27:18]     slot update_slots: id  0 | task 36181 | forcing full prompt re-processing due to lack of cache data (likely due to SWA or hybrid/recurrent memory, see https://g
+[15:27:18]     slot update_slots: id  0 | task 43083 | forcing full prompt re-processing due to lack of cache data (likely due to SWA or hybrid/recurrent memory, see https://g
+[15:27:18] ============================================================
+[15:27:18] ============================================================
+[15:27:18] ollama / qwen3.5:27b
+[15:27:18]   trial 1/5 ...
+[15:27:38]     -> prompt=29 gen=158 tok/s=12.35 peak=NoneGB
+[15:27:38]   trial 2/5 ...
+[15:27:50]     -> prompt=29 gen=138 tok/s=12.36 peak=NoneGB
+[15:27:50]   trial 3/5 ...
+[15:28:03]     -> prompt=29 gen=164 tok/s=12.34 peak=NoneGB
+[15:28:03]   trial 4/5 ...
+[15:28:13]     -> prompt=29 gen=112 tok/s=12.35 peak=NoneGB
+[15:28:13]   trial 5/5 ...
+[15:28:26]     -> prompt=29 gen=149 tok/s=12.17 peak=NoneGB
+[15:28:26] ============================================================
+[15:28:26] mlx-lm / mlx-community/Qwen3.5-27B-4bit
+[15:28:26]   trial 1/5 ...
+[15:28:27]     -> 失敗: mlx_lm.generate が異常終了 (rc=1):
+ load
+    model, config = load_model(model_path, lazy, model_config=model_config)
+  File "/Users/shabelab/Desktop/paper-20260718/experiment/.venv-mlx/lib/python3.9/site-packages/mlx_lm/utils.py", line 201, in load_model
+    model_class, model_args_class = get_model_classes(config=config)
+  File "/Users/shabelab/Desktop/paper-20260718/experiment/.venv-mlx/lib/python3.9/site-packages/mlx_lm/utils.py", line 75, in _get_classes
+    raise ValueError(msg)
+ValueError: Model type qwen3_5 not supported.
+
+[15:28:27]   trial 2/5 ...
+[15:28:28]     -> 失敗: mlx_lm.generate が異常終了 (rc=1):
+ load
+    model, config = load_model(model_path, lazy, model_config=model_config)
+  File "/Users/shabelab/Desktop/paper-20260718/experiment/.venv-mlx/lib/python3.9/site-packages/mlx_lm/utils.py", line 201, in load_model
+    model_class, model_args_class = get_model_classes(config=config)
+  File "/Users/shabelab/Desktop/paper-20260718/experiment/.venv-mlx/lib/python3.9/site-packages/mlx_lm/utils.py", line 75, in _get_classes
+    raise ValueError(msg)
+ValueError: Model type qwen3_5 not supported.
+
+[15:28:28]   trial 3/5 ...
+[15:28:29]     -> 失敗: mlx_lm.generate が異常終了 (rc=1):
+ load
+    model, config = load_model(model_path, lazy, model_config=model_config)
+  File "/Users/shabelab/Desktop/paper-20260718/experiment/.venv-mlx/lib/python3.9/site-packages/mlx_lm/utils.py", line 201, in load_model
+    model_class, model_args_class = get_model_classes(config=config)
+  File "/Users/shabelab/Desktop/paper-20260718/experiment/.venv-mlx/lib/python3.9/site-packages/mlx_lm/utils.py", line 75, in _get_classes
+    raise ValueError(msg)
+ValueError: Model type qwen3_5 not supported.
+
+[15:28:29]   trial 4/5 ...
+[15:28:30]     -> 失敗: mlx_lm.generate が異常終了 (rc=1):
+ load
+    model, config = load_model(model_path, lazy, model_config=model_config)
+  File "/Users/shabelab/Desktop/paper-20260718/experiment/.venv-mlx/lib/python3.9/site-packages/mlx_lm/utils.py", line 201, in load_model
+    model_class, model_args_class = get_model_classes(config=config)
+  File "/Users/shabelab/Desktop/paper-20260718/experiment/.venv-mlx/lib/python3.9/site-packages/mlx_lm/utils.py", line 75, in _get_classes
+    raise ValueError(msg)
+ValueError: Model type qwen3_5 not supported.
+
+[15:28:30]   trial 5/5 ...
+[15:28:30]     -> 失敗: mlx_lm.generate が異常終了 (rc=1):
+ load
+    model, config = load_model(model_path, lazy, model_config=model_config)
+  File "/Users/shabelab/Desktop/paper-20260718/experiment/.venv-mlx/lib/python3.9/site-packages/mlx_lm/utils.py", line 201, in load_model
+    model_class, model_args_class = get_model_classes(config=config)
+  File "/Users/shabelab/Desktop/paper-20260718/experiment/.venv-mlx/lib/python3.9/site-packages/mlx_lm/utils.py", line 75, in _get_classes
+    raise ValueError(msg)
+ValueError: Model type qwen3_5 not supported.
+
+[15:28:30] 完了。CSV: /Users/shabelab/Desktop/paper-20260718/experiment/results/mlx_compare.csv
+[15:28:30] ※ モデルが完全一致でない場合、その差異を notes.md に必ず明記すること。
+[15:28:31] ============================================================
+[15:28:31] 環境確認
+[15:28:31] Ollama: 0.30.10
+[15:28:31] mlx-lm: 導入済み (version=0.29.1)
+[15:28:31] ------------------------------------------------------------
+[15:28:31] Ollama のバックエンド確認（確認できた事実のみ記録する）:
+[15:28:31]   ~/.ollama/logs/server.log より:
+[15:28:31]     ggml_metal_init: found device: Apple M4 Pro
+[15:28:31]     ggml_metal_init: picking default device: Apple M4 Pro
+[15:28:31]     ggml_metal_init: use fusion         = true
+[15:28:31]     ggml_metal_init: use concurrency    = true
+[15:28:31]     ggml_metal_init: use graph optimize = true
+[15:28:31]     clip_ctx: CLIP using MTL0 backend
+[15:28:31]     load_hparams: more info: https://github.com/ggml-org/llama.cpp/issues/16842
+[15:28:31]     srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+[15:28:31] ============================================================
+[15:28:31] ============================================================
+[15:28:31] mlx-lm / mlx-community/Qwen3.5-27B-5bit
+[15:28:31]   trial 1/5 ...
+[15:28:32]     -> 失敗: mlx_lm.generate が異常終了 (rc=1):
+ load
+    model, config = load_model(model_path, lazy, model_config=model_config)
+  File "/Users/shabelab/Desktop/paper-20260718/experiment/.venv-mlx/lib/python3.9/site-packages/mlx_lm/utils.py", line 201, in load_model
+    model_class, model_args_class = get_model_classes(config=config)
+  File "/Users/shabelab/Desktop/paper-20260718/experiment/.venv-mlx/lib/python3.9/site-packages/mlx_lm/utils.py", line 75, in _get_classes
+    raise ValueError(msg)
+ValueError: Model type qwen3_5 not supported.
+
+[15:28:32]   trial 2/5 ...
+[15:28:33]     -> 失敗: mlx_lm.generate が異常終了 (rc=1):
+ load
+    model, config = load_model(model_path, lazy, model_config=model_config)
+  File "/Users/shabelab/Desktop/paper-20260718/experiment/.venv-mlx/lib/python3.9/site-packages/mlx_lm/utils.py", line 201, in load_model
+    model_class, model_args_class = get_model_classes(config=config)
+  File "/Users/shabelab/Desktop/paper-20260718/experiment/.venv-mlx/lib/python3.9/site-packages/mlx_lm/utils.py", line 75, in _get_classes
+    raise ValueError(msg)
+ValueError: Model type qwen3_5 not supported.
+
+[15:28:33]   trial 3/5 ...
+[15:28:34]     -> 失敗: mlx_lm.generate が異常終了 (rc=1):
+ load
+    model, config = load_model(model_path, lazy, model_config=model_config)
+  File "/Users/shabelab/Desktop/paper-20260718/experiment/.venv-mlx/lib/python3.9/site-packages/mlx_lm/utils.py", line 201, in load_model
+    model_class, model_args_class = get_model_classes(config=config)
+  File "/Users/shabelab/Desktop/paper-20260718/experiment/.venv-mlx/lib/python3.9/site-packages/mlx_lm/utils.py", line 75, in _get_classes
+    raise ValueError(msg)
+ValueError: Model type qwen3_5 not supported.
+
+[15:28:34]   trial 4/5 ...
+[15:28:35]     -> 失敗: mlx_lm.generate が異常終了 (rc=1):
+ load
+    model, config = load_model(model_path, lazy, model_config=model_config)
+  File "/Users/shabelab/Desktop/paper-20260718/experiment/.venv-mlx/lib/python3.9/site-packages/mlx_lm/utils.py", line 201, in load_model
+    model_class, model_args_class = get_model_classes(config=config)
+  File "/Users/shabelab/Desktop/paper-20260718/experiment/.venv-mlx/lib/python3.9/site-packages/mlx_lm/utils.py", line 75, in _get_classes
+    raise ValueError(msg)
+ValueError: Model type qwen3_5 not supported.
+
+[15:28:35]   trial 5/5 ...
+[15:28:36]     -> 失敗: mlx_lm.generate が異常終了 (rc=1):
+ load
+    model, config = load_model(model_path, lazy, model_config=model_config)
+  File "/Users/shabelab/Desktop/paper-20260718/experiment/.venv-mlx/lib/python3.9/site-packages/mlx_lm/utils.py", line 201, in load_model
+    model_class, model_args_class = get_model_classes(config=config)
+  File "/Users/shabelab/Desktop/paper-20260718/experiment/.venv-mlx/lib/python3.9/site-packages/mlx_lm/utils.py", line 75, in _get_classes
+    raise ValueError(msg)
+ValueError: Model type qwen3_5 not supported.
+
+[15:28:36] 完了。CSV: /Users/shabelab/Desktop/paper-20260718/experiment/results/mlx_compare.csv
+[15:28:36] ※ モデルが完全一致でない場合、その差異を notes.md に必ず明記すること。
+[mlx] 完了
